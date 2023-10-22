@@ -1,0 +1,12 @@
+[submodule "client"]
+	path = client
+	url = git@github.com:Vollab/web.git
+[submodule "auth"]
+	path = auth
+	url = git@github.com:Vollab/auth.git
+[submodule "user"]
+	path = user
+	url = git@github.com:Vollab/user.git
+[submodule "demand"]
+	path = demand
+	url = git@github.com:Vollab/demand.git

@@ -1,0 +1,19 @@
+services:
+  nats:
+    image: nats:alpine
+    command: -js
+    volumes:
+      - nats:/tmp/nats/jetstream
+
+  db:
+    image: postgres:alpine
+    volumes:
+      - db:/var/lib/postgresql/data
+    environment:
+      - POSTGRES_DB=serv
+      - POSTGRES_USER=thirsec
+      - POSTGRES_PASSWORD=mypass
+
+volumes:
+  nats:
+  db:

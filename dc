@@ -1,0 +1,22 @@
+#!/bin/bash
+
+# script https://www.devmedia.com.br/introducao-ao-shell-script-no-linux/25778
+# flags https://stackoverflow.com/a/7069755
+
+[[ $2 && $2 = "-b" ]] && build="--build"
+
+services=("auth" "customers" "companys" "schedule")
+
+i=0
+until [ ! $i -lt ${#services[*]} ]
+do
+
+  if [ -d "./${services[i]}" ]
+  then
+    files[i]="-f ./${services[i]}/docker/docker-compose.yaml"
+  fi
+
+  i=`expr $i + 1`
+done
+
+exec docker-compose -f ./docker-compose.yaml ${files[*]} $1 ${build}
