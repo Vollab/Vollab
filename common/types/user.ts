@@ -1,6 +1,9 @@
-import { UserResponse } from "../user";
+export interface UserRequest {
+  token: string;
+}
 
-export interface CandidateRequest {
+export interface UserResponse {
+  token: string;
   name: string;
   email: string;
   phone: string;
@@ -10,5 +13,3 @@ export interface CandidateRequest {
   activity_areas: string[];
   links?: { title: string; link: string }[];
 }
-
-export type CandidateResponse = UserResponse;
