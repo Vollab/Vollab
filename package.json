@@ -8,7 +8,6 @@
 	"workspaces": [
 		"common",
 		"auth",
-		"user",
 		"demand"
 	],
 	"author": "",
