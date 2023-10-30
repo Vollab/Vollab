@@ -10,8 +10,8 @@ services:
     volumes:
       - db:/var/lib/postgresql/data
     environment:
-      - POSTGRES_DB=serv
-      - POSTGRES_USER=thirsec
+      - POSTGRES_DB=vollab
+      - POSTGRES_USER=vollab
       - POSTGRES_PASSWORD=mypass
 
 volumes:
