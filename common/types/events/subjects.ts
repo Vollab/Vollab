@@ -4,5 +4,8 @@ export enum Subjects {
 	Orderer = 'Orderer.>',
 	CandidateCreated = 'Candidate.Created',
 	CandidateUpdated = 'Candidate.Updated',
-	Candidate = 'Candidate.>'
+	Candidate = 'Candidate.>',
+	CandidateAreaCreated = 'Candidate.Area.Created',
+	CandidateAreaDeleted = 'Candidate.Area.Deleted',
+	CandidateArea = 'Candidate.Area.>'
 }
