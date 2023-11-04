@@ -1,4 +1,5 @@
 export enum Stores {
 	Orderer = 'OrdererStream',
-	Candidate = 'CandidateStream'
+	Candidate = 'CandidateStream',
+	CandidateArea = 'CandidateAreaStream'
 }

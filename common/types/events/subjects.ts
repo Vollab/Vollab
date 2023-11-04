@@ -5,7 +5,7 @@ export enum Subjects {
 	CandidateCreated = 'Candidate.Created',
 	CandidateUpdated = 'Candidate.Updated',
 	Candidate = 'Candidate.>',
-	CandidateAreaCreated = 'Candidate.Area.Created',
-	CandidateAreaDeleted = 'Candidate.Area.Deleted',
-	CandidateArea = 'Candidate.Area.>'
+	CandidateAreaCreated = 'CandidateArea.Created',
+	CandidateAreaDeleted = 'CandidateArea.Deleted',
+	CandidateArea = 'CandidateArea.>'
 }
