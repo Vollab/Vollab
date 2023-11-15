@@ -5,7 +5,7 @@
 
 [[ $2 && $2 = "-b" ]] && build="--build"
 
-services=("auth" "demand")
+services=("auth" "demand" "vacancy")
 
 i=0
 until [ ! $i -lt ${#services[*]} ]
