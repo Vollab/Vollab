@@ -43,6 +43,30 @@ class Database {
 
 		return result.rows
 	}
+
+	async beginTxn() {
+		if (!this._client) throw new Error('Can not access DB before connecting')
+
+		logger.debug(`${logger.BLUE('Txn')}: Begin`)
+
+		await this._client.query(`BEGIN`)
+	}
+
+	async commitTxn() {
+		if (!this._client) throw new Error('Can not access DB before connecting')
+
+		logger.debug(`${logger.BLUE('Txn')}: Commit`)
+
+		await this._client.query(`COMMIT`)
+	}
+
+	async rollbackTxn() {
+		if (!this._client) throw new Error('Can not access DB before connecting')
+
+		logger.debug(`${logger.BLUE('Txn')}: Rollback`)
+
+		await this._client.query(`ROLLBACK`)
+	}
 }
 
 const instance = Database.instance
