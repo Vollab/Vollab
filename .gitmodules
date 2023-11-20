@@ -10,3 +10,6 @@
 [submodule "web"]
 	path = web
 	url = git@github.com:Vollab/web.git
+[submodule "types"]
+	path = types
+	url = git@github.com:Vollab/types.git

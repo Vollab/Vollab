@@ -1,29 +1,30 @@
 {
-	"name": "common",
-	"version": "1.0.0",
-	"scripts": {},
-	"keywords": [],
-	"author": "",
-	"license": "ISC",
-	"dependencies": {
-		"express-validator": "^6.14.2",
-		"jsonwebtoken": "^9.0.0",
-		"nats": "^2.7.1",
-		"pg": "^8.8.0",
-		"redis": "^4.5.1"
-	},
-	"devDependencies": {
-		"@types/express": "^4.17.14",
-		"@types/jsonwebtoken": "^8.5.9",
-		"@types/pg": "^8.6.5"
-	},
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/ThirSec/ThirSec.git"
-	},
-	"bugs": {
-		"url": "https://github.com/ThirSec/ThirSec/issues"
-	},
-	"homepage": "https://github.com/ThirSec/ThirSec#readme",
-	"description": ""
+  "name": "common",
+  "version": "1.0.0",
+  "scripts": {},
+  "keywords": [],
+  "author": "",
+  "main": "index.ts",
+  "license": "ISC",
+  "dependencies": {
+    "express-validator": "^6.14.2",
+    "jsonwebtoken": "^9.0.0",
+    "nats": "^2.7.1",
+    "pg": "^8.8.0",
+    "redis": "^4.5.1"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.14",
+    "@types/jsonwebtoken": "^8.5.9",
+    "@types/pg": "^8.6.5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ThirSec/ThirSec.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ThirSec/ThirSec/issues"
+  },
+  "homepage": "https://github.com/ThirSec/ThirSec#readme",
+  "description": ""
 }

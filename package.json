@@ -1,16 +1,18 @@
 {
-	"name": "vollab",
-	"version": "1.0.0",
-	"description": "",
-	"type": "module",
-	"scripts": {},
-	"keywords": [],
-	"workspaces": [
-		"common",
-		"auth",
-		"demand",
-		"vacancy"
-	],
-	"author": "",
-	"license": "ISC"
+  "name": "vollab",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "scripts": {},
+  "keywords": [],
+  "workspaces": [
+    "common",
+    "auth",
+    "demand",
+    "web",
+    "vacancy",
+    "types"
+  ],
+  "author": "",
+  "license": "ISC"
 }
